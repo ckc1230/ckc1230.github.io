@@ -63,23 +63,21 @@ hr {
 
 #carousel-item-one {
 	background: url('assets/images/paws-spread.jpg');
-	position: center;
-	background-size: 100% 100%;
+	/*background-position: center;*/
+	background-size: cover;
 }
 #carousel-item-two {
 	font-family: 'Poppins', sans-serif;
 	background: url('assets/images/trekkster.jpg');
-	position: center;
-	background-size: 100% 100%;
+	background-position: center;
+	background-size: cover;
 }
 #carousel-item-three {
 	background: url('assets/images/stork-spread.jpg');
-	position: center;
 	background-size: cover;
 }
 #carousel-item-four {
 	background: url('assets/images/blackbeard.jpg');
-	position: center;
 	background-size: cover;
 }
 
