@@ -6,6 +6,10 @@ hr {
 	margin: 20px 20px 10px 20px;
 }
 
+.backdrop {
+	background-color: transparent !important;
+}
+
 .nav-wrapper {
 	background: rgba(0, 0, 0, 0.2) !important;
 	color: black;
@@ -25,8 +29,10 @@ hr {
 .main-section-icon-div {
 	margin-top: 150px;
 	position: absolute;
-  bottom: 50px;
- 	margin-left: calc(50% - 160px);
+  bottom: 15%;
+ 	margin-left: calc(50% - 210px);
+ 	padding: 10px;
+ 	border-radius: 20px;
 }
 
 .main-section-anchor {
@@ -36,8 +42,8 @@ hr {
 }
 
 .main-section-icon {
-	height: 40px !important;
-	width: 40px !important;
+	height: 50px !important;
+	width: 50px !important;
 	display: inline-block !important;
 	position: relative !important;
 }
@@ -49,9 +55,10 @@ hr {
 }
 
 #carousel-item-zero {
-	background: url('assets/images/mic-spread.jpg');
+	background: url('assets/images/micdrop-spread.jpg');
 	position: center;
-	background-size: 100% 100%;
+	background-position: center;
+	background-size: cover;
 }
 
 #carousel-item-one {
@@ -66,12 +73,12 @@ hr {
 	background-size: 100% 100%;
 }
 #carousel-item-three {
-	background: url('assets/images/stork.png');
+	background: url('assets/images/stork-spread.jpg');
 	position: center;
 	background-size: cover;
 }
 #carousel-item-four {
-	background: url('assets/images/pirate.png');
+	background: url('assets/images/blackbeard.jpg');
 	position: center;
 	background-size: cover;
 }
@@ -81,20 +88,23 @@ hr {
 }
 
 #project-menu {
-	padding: 20px;
+	padding: 20px 20px 30px 20px;
 	margin: 0 auto;
 }
 
 .project-menu-div {
 	height: 100px !important;
 	max-height: 100%;
+	padding: 0 !important;
+	margin: 0 10px 0 10px;
 }
 
 .project-menu-img {
 	height: 100px !important;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	max-height: 100%;
 	border-radius: 3px;
+	width: 100% !important;
 }
 
 .carousel-slider{
@@ -116,7 +126,7 @@ hr {
 	background: url('assets/images/fader.jpg');
 	background-position: center;
 	background-size: 100%;
-	padding: 15px 0 70px 0;
+	padding: 15px 0 20px 0;
   filter: grayscale(85%);
   color: white;
   text-shadow: 0 0 20px red, 0 0 5px #0000FF;
@@ -125,8 +135,7 @@ hr {
 
 #parallax-img1 {
   z-index: -1;
-  filter: blur(4px);
-  height: 3000px;
+	height: 1100px;
 }
 
 #parallax-img2 {
@@ -151,6 +160,10 @@ hr {
 
 #about-me-text {
 	font-size: 20px;
+}
+
+.about-me-paragraph {
+	font-size: 16px;
 }
 
 .parallax-text {
@@ -183,16 +196,40 @@ hr {
 	width: 10px;
 }
 
+#paws-logo-white-big {
+	height: 18px;
+	width: 18px;
+}
+
 .project-menu-div:hover {
 	box-sizing: border-box;
 }
 
 .project-menu-img:hover {
-	outline: 5px solid yellow;
-	outline-style: double;
-  outline-offset: -5px;
+	outline: 10px solid rgba(255, 255, 0, .5);
+  outline-offset: -10px;
+}
+
+.project-menu-div-active {
+	outline: 10px solid rgba(0, 255, 0, .5);
+  outline-offset: -10px;
 }
 
 #launch-project-btn {
 	margin-bottom: 30px;
+	border: 2px solid white;
+}
+
+#resume-modal {
+	height: 90%;
+}
+
+.modal-content {
+	padding: 3px !important;
+	height: 100%;
+}
+
+#resume-object {
+	width: 100%;
+	height: 100%;
 }

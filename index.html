@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>Christopher Chan</title>
+  <link rel="icon" href="assets/images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -18,23 +20,33 @@
   <!-- Main Section -->
 
   <div class="parallax-container" id="main-section">
-    <a href="https://profiles.generalassemb.ly/profiles/christopher-chan" class="btn right nav-btn">GA Profile</a>
     <a href="#about-me" class="btn right nav-btn">About Me</a>
     <a href="#projects" class="btn right nav-btn">Projects</a>    
     <a href="#technologies" class="btn right nav-btn">Technologies</a>
-    <div class="parallax valign-wrapper"><img id="parallax-img1" src="assets/images/piano-hands.jpg">
+    <div class="parallax valign-wrapper"><img id="parallax-img1" src="assets/images/main-screen.jpg">
       <div class="parallax-text valign center-align">
         <h1>Christopher Chan</h1>
         <h3>Web Developer</h3>
       </div>
     </div>
     <div class="main-section-icon-div" class="center">
-      <a href="https://github.com/ckc1230" class="main-section-anchor"><img class="main-section-icon" src="assets/images/github.png"></a>
-      <a href="https://www.linkedin.com/in/ckc1230" class="main-section-anchor"><img class="main-section-icon" src="assets/images/linkedin.png"></a>
-      <a href="#" class="main-section-anchor tooltipped" data-position="top" data-delay="50" data-tooltip="chriskchan1230@gmail.com (click to copy)" id="email-copy"><img class="main-section-icon" src="assets/images/email.png"></a>
-      <a href="Resume_ChristopherChan.pdf" class="main-section-anchor"><img class="main-section-icon" src="assets/images/resume.png"></a>
+      <a href="https://github.com/ckc1230" class="main-section-anchor tooltipped" data-position="bottom" data-delay="50" data-tooltip="GitHub"><img class="main-section-icon" src="assets/images/github2.png"></a>
+      <a href="https://www.linkedin.com/in/ckc1230" class="main-section-anchor tooltipped" data-position="top" data-delay="50" data-tooltip="LinkedIn"><img class="main-section-icon" src="assets/images/linkedin.png"></a>
+      <a href="#" class="main-section-anchor tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email (click to copy)" id="email-copy"><img class="main-section-icon" src="assets/images/email.png"></a>
+      <a href="#" class="main-section-anchor tooltipped" data-position="top" data-delay="50" data-tooltip="Resume"><img class="main-section-icon" src="assets/images/resume.png" id="resume-btn"></a>
+      <a href="https://profiles.generalassemb.ly/profiles/christopher-chan" class="main-section-anchor tooltipped" data-position="bottom" data-delay="50" data-tooltip="General Assembly Alumni Profile"><img class="main-section-icon" src="assets/images/ga.png"></a>
+
     </div>
   </div>
+
+  <div id="resume-modal" class="modal">
+    <div class="modal-content">
+    <object data="Resume_ChristopherChan.pdf" type="application/pdf" width="300" height="200" id="resume-object">
+        alt : <a href="test.pdf">test.pdf</a>
+    </object>
+    </div>
+  </div>
+
   <!-- Technologies Section -->
 
   <div class="container center" id="technologies">
@@ -78,7 +90,7 @@
         <h5>Node.js</h5>
       </div>
     </div>
-        <div class="row">
+    <div class="row">
       <div class="col m4">
         <h5>Bootstrap</h5>
       </div>
@@ -89,6 +101,20 @@
         <h5>AJAX</h5>
       </div> 
     </div>    
+    <div class="row">
+      <div class="col m3">
+        <h5>Photoshop</h5>
+      </div>      
+      <div class="col m3">
+        <h5>Pro Tools</h5>
+      </div>      
+      <div class="col m3">
+        <h5>Media Composer</h5>
+      </div>      
+      <div class="col m3">
+        <h5>Sibelius</h5>
+      </div>
+    </div>
   </div>
 
   <!-- Portfolio Section -->
@@ -107,8 +133,8 @@
       </div>
 
       <div class="carousel-item green white-text" href="#three!" id="carousel-item-two">
-        <h2>Trekkster</h2>
-        <p class="white-text">What's your next adventure?</p>
+        <h3>Trekkster</h3>
+        <h5 class="white-text">What's your next adventure?</h5>
       </div>
 
       <div class="carousel-item blue white-text" href="#four!" id="carousel-item-three">
@@ -131,7 +157,7 @@
           </div>          
           <div class="col offset-m1 m6">
             <p>
-              A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for comparisons (also known as "shootouts") of microphones they wish to use/purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
+              A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for microphone comparisons (also known as "shootouts") which allows them to be informed of the equipment they wish to use or purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
             </p>
           </div>
         </div>
@@ -141,14 +167,15 @@
         <div class="row">
           <div class="col offset-m2 m2">
             <p>
-              <h5>.paws()</h5>
+              <h5>.paws(<img class="responsive-img" id="paws-logo-white-big" src="assets/images/paws-logo-white.png"/>)</h5>
               Duration: 1 week sprint <br>
               Team-Size: 3 Developers
             </p>
           </div>          
           <div class="col offset-m1 m6">
             <p>
-              A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for comparisons (also known as "shootouts") of microphones they wish to use/purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
+              Looking for a furry friend? This website allows users to browse for a new animal to adopt or place an animal up for adoption - because every animal deserves a loving home! <br> 
+              This application was developed with MEAN-stack and Bootstrap for styling.
             </p>
           </div>
         </div>
@@ -165,7 +192,8 @@
           </div>          
           <div class="col offset-m1 m6">
             <p>
-              A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for comparisons (also known as "shootouts") of microphones they wish to use/purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
+              A travel-blog application developed using Ruby on Rails. Trekkster allows users to share memories from
+              select cities and give other travelers ideas/tips for fun adventures. Come start your next adventure today!
             </p>
           </div>
         </div>
@@ -182,7 +210,7 @@
           </div>          
           <div class="col offset-m1 m6">
             <p>
-              A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for comparisons (also known as "shootouts") of microphones they wish to use/purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
+              Stork is an online candy store. Built primarily with Ruby on Rails, this project incorporates Devise for user authorization and Stripe for payment processing. Satisfy your sweettooth with Stork!
             </p>
           </div>
         </div>
@@ -199,7 +227,7 @@
           </div>          
           <div class="col offset-m1 m5">
             <p>
-              A single-page game based on the popular game - Battleship. This pirate-themed variation is built through HTML/CSS, JavaScript and jQuery.
+              A single-page game based on Hasbro's Battleship. <br> This pirate-themed variation is built through HTML/CSS, JavaScript and jQuery - complete with music and SFX.
             </p>
           </div>
         </div>
@@ -209,7 +237,7 @@
 
 
     <div class="row white-text black" id="project-menu">
-      <div class="col m2 project-menu-div offset-m1" id="project-menu-item-0">
+      <div class="col m2 project-menu-div offset-m1 project-menu-div-active" id="project-menu-item-0">
         <img class="responsive-img project-menu-img" src="assets/images/mic-drop.png">
       </div>    
       <div class="col m2 project-menu-div" id="project-menu-item-1">
@@ -232,12 +260,29 @@
 
   <div class="parallax-container" id="about-me">
     <div class="parallax valign-wrapper"><img id="parallax-img2" src="assets/images/sd.jpg">
-      <div class="parallax-text center-align valign" id="about-me-container">
-          <h3>About Me</h3>
-          <p id="about-me-text">I am a full-stack web developer currently in San Francisco.<br>
-            Originally working in the music industry of San Diego, California, both as a performer and an audio engineer, I transitioned into web development in hopes of exploring new challenges in a more technical field.<br>
-            I bring with me the discipline, self-motivation, and creativity that I've gained through my experience of stuyding music, attention to detail gained through listening critically in the recording studio, and a desire to connect with others on a personal level through the integrity of my work. I also hope to embody a spirit of service and care everything I'm a part of.
-          </p>
+      <div class="parallax-text valign" id="about-me-container">
+          <h3 class="center-align">About Me</h3>
+          <div class="row">
+            <p id="about-me-text" class="center-align">I am a full-stack web developer in San Francisco, California</p>
+            <div class="col m5 offset-m1 about-me-paragraph">
+              <p>
+                Originally working in the music industry of <b>San Diego, California</b>, both as a performer and an audio engineer, I transitioned into web development in hopes of exploring new challenges in a more technical field.
+              </p>
+              <p>
+                I bring with me the discipline, self-motivation, and creativity that I've gained through my experience of studying music, attention to detail gained through listening critically in the recording studio, and a desire to connect with others on a personal level through the integrity of my work.
+              </p>
+            </div>
+            <div class="col m5 offset-m1 about-me-paragraph">
+              <p>
+                As a web developer, I enjoy having the skills and knowledge to create new tools. I've always been drawn to 
+                understanding and hearing the needs of others - and building web applications is an exciting new way for me respond to those needs. 
+              </p>
+              <p>
+                I hope to embody a spirit of service and care as I continue to build, develop, and create.
+              </p>
+            </div>
+          </div>
+
       </div>
     </div>
   </div>
@@ -273,6 +318,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
