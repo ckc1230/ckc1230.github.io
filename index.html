@@ -42,203 +42,61 @@
   <div id="resume-modal" class="modal">
     <div class="modal-content">
     <object data="Resume_ChristopherChan.pdf" type="application/pdf" width="300" height="200" id="resume-object">
-        alt : <a href="test.pdf">test.pdf</a>
+        alt : <a href="test.pdf">resume.pdf</a>
     </object>
     </div>
   </div>
 
   <!-- Technologies Section -->
 
-  <div class="container center" id="technologies">
-   <h3>Technologies</h3> <hr>
-    <div class="row">
-      <div class="col m3">
-        <h5>HTML</h5>
-      </div>      
-      <div class="col m3">
-        <h5>CSS</h5>
-      </div>      
-      <div class="col m3">
-        <h5>JavaScript</h5>
-      </div>      
-      <div class="col m3">
-        <h5>jQuery</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col m4">
-        <h5>Ruby</h5>
-      </div>
-      <div class="col m4">
-        <h5>Rails</h5>
-      </div>      
-      <div class="col m4">
-        <h5>Git/GitHub</h5>
-      </div> 
-    </div>
-    <div class="row">
-      <div class="col m3">
-        <h5>Mongoose</h5>
-      </div>      
-      <div class="col m3">
-        <h5>Express</h5>
-      </div>      
-      <div class="col m3">
-        <h5>Angular</h5>
-      </div>      
-      <div class="col m3">
-        <h5>Node.js</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col m4">
-        <h5>Bootstrap</h5>
-      </div>
-      <div class="col m4">
-        <h5>Materialize</h5>
-      </div>      
-      <div class="col m4">
-        <h5>AJAX</h5>
-      </div> 
-    </div>    
-    <div class="row">
-      <div class="col m3">
-        <h5>Photoshop</h5>
-      </div>      
-      <div class="col m3">
-        <h5>Pro Tools</h5>
-      </div>      
-      <div class="col m3">
-        <h5>Media Composer</h5>
-      </div>      
-      <div class="col m3">
-        <h5>Sibelius</h5>
-      </div>
-    </div>
+  <div class="container" id="technologies">
+   <h3 class="center">Technologies</h3> <hr>
+    <table class="center" id="technologies-list">
+      <tr>
+        <th>Languages:</th>
+        <td>HTML5</td> 
+        <td>CSS3</td>          
+        <td>JavaScript</td> 
+        <td>jQuery</td>
+        <td>Ruby</td>
+      </tr>        
+      <tr>
+        <th>Frameworks:</th>
+        <td>NodeJS</td> 
+        <td>Express</td>          
+        <td>Rails</td>          
+        <td>Bootstrap</td>          
+        <td>Materialize</td>          
+      </tr>        
+      <tr>
+        <th>Database Tools:</th>
+        <td>MongoDB</td> 
+        <td>Mongoose</td>          
+      </tr>
+      <tr>
+        <th>Other:</th>
+        <td>Git/GitHub</td>                    
+        <td>AJAX</td>          
+        <td>JSON</td>          
+        <td>Handlebars</td>          
+      </tr>        
+      <tr>
+        <th>Media Software:</th>
+        <td>Adobe Photoshop</td>                    
+        <td>Pro Tools</td>          
+        <td>Media Composer</td>          
+        <td>Sibelius</td>          
+      </tr>
+    </table>
   </div>
 
   <!-- Portfolio Section -->
   <div id="projects">
     <h1 class="black white-text center" id="project-header">Projects</h1>
-    <div class="carousel carousel-slider center" id="project-carousel">
-      <div class="carousel-fixed-item center">
-        <a class="btn waves-effect black white-text darken-text-2" id="launch-project-btn" href="https://young-harbor-53388.herokuapp.com/">Launch Project</a>
-      </div>
-      <div class="carousel-item red white-text" href="#one!" id="carousel-item-zero">
-
-      </div>
-
-      <div class="carousel-item amber white-text" href="#two!" id="carousel-item-one">
-
-      </div>
-
-      <div class="carousel-item green white-text" href="#three!" id="carousel-item-two">
-        <h3>Trekkster</h3>
-        <h5 class="white-text">What's your next adventure?</h5>
-      </div>
-
-      <div class="carousel-item blue white-text" href="#four!" id="carousel-item-three">
-      </div>  
-
-      <div class="carousel-item blue white-text" href="#four!" id="carousel-item-four">
-      </div>
-    </div>
-
-
-    <div class="carousel carousel-slider" id="project-description-carousel">
-      <div class="carousel-item black white-text carousel-description" href="#one!" id="carousel-description-zero">
-        <div class="row">
-          <div class="col offset-m2 m2">
-            <p>
-              <h5>Mic Drop</h5>
-              Duration: 2 week sprint <br>
-              Team-Size: Individual
-            </p>
-          </div>          
-          <div class="col offset-m1 m6">
-            <p>
-              A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for microphone comparisons (also known as "shootouts") which allows them to be informed of the equipment they wish to use or purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item black white-text carousel-description" href="#two!" id="carousel-description-one">
-        <div class="row">
-          <div class="col offset-m2 m2">
-            <p>
-              <h5>.paws(<img class="responsive-img" id="paws-logo-white-big" src="assets/images/paws-logo-white.png"/>)</h5>
-              Duration: 1 week sprint <br>
-              Team-Size: 3 Developers
-            </p>
-          </div>          
-          <div class="col offset-m1 m6">
-            <p>
-              Looking for a furry friend? This website allows users to browse for a new animal to adopt or place an animal up for adoption - because every animal deserves a loving home! <br> 
-              This application was developed with MEAN-stack and Bootstrap for styling.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item black white-text carousel-description" href="#three!" id="carousel-description-two">
-        <div class="row">
-          <div class="col offset-m2 m2">
-            <p>
-              <h5>Trekkster</h5>
-              Duration: 1 week sprint <br>
-              Team-Size: 3 Developers
-            </p>
-          </div>          
-          <div class="col offset-m1 m6">
-            <p>
-              A travel-blog application developed using Ruby on Rails. Trekkster allows users to share memories from
-              select cities and give other travelers ideas/tips for fun adventures. Come start your next adventure today!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item black white-text carousel-description" href="#four!" id="carousel-description-three">
-        <div class="row">
-          <div class="col offset-m2 m2">
-            <p>
-              <h5>Stork</h5>
-              Duration: 1 week sprint <br>
-              Team-Size: 4 Developers
-            </p>
-          </div>          
-          <div class="col offset-m1 m6">
-            <p>
-              Stork is an online candy store. Built primarily with Ruby on Rails, this project incorporates Devise for user authorization and Stripe for payment processing. Satisfy your sweettooth with Stork!
-            </p>
-          </div>
-        </div>
-      </div>  
-
-      <div class="carousel-item  black white-text carousel-description" href="#four!" id="carousel-description-four">
-        <div class="row">
-          <div class="col offset-m2 m3">
-            <p>
-              <h5>Blackbeard's Revenge</h5>
-              Duration: 3 day sprint <br>
-              Team-Size: Individual
-            </p>
-          </div>          
-          <div class="col offset-m1 m5">
-            <p>
-              A single-page game based on Hasbro's Battleship. <br> This pirate-themed variation is built through HTML/CSS, JavaScript and jQuery - complete with music and SFX.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
 
     <div class="row white-text black" id="project-menu">
       <div class="col m2 project-menu-div offset-m1 project-menu-div-active" id="project-menu-item-0">
-        <img class="responsive-img project-menu-img" src="assets/images/mic-drop.png">
+        <img class="responsive-img project-menu-img" src="assets/images/mic-spread.png">
       </div>    
       <div class="col m2 project-menu-div" id="project-menu-item-1">
         <img class="responsive-img project-menu-img" src="assets/images/paws.png">
@@ -254,35 +112,142 @@
       </div>
     </div>
   </div>
- 
+
+  <div class="carousel carousel-slider center" id="project-carousel">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect black white-text darken-text-2" id="launch-project-btn" href="http://micdropshootout.herokuapp.com/">Launch Project</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!" id="carousel-item-zero">
+    </div>
+
+    <div class="carousel-item amber white-text" href="#two!" id="carousel-item-one">
+    </div>
+    <div class="carousel-item green white-text" href="#three!" id="carousel-item-two">
+      <h3>Trekkster</h3>
+      <h5 class="white-text">What's your next adventure?</h5>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!" id="carousel-item-three">
+    </div>  
+    <div class="carousel-item blue white-text" href="#four!" id="carousel-item-four">
+    </div>
+  </div>
+
+
+  <div class="carousel carousel-slider" id="project-description-carousel">
+    <div class="carousel-item black white-text carousel-description" href="#one!" id="carousel-description-zero">
+      <div class="row">
+        <div class="col offset-m2 m2">
+          <p>
+            <h5>Mic Drop</h5>
+            Duration: 2 Weeks<br>
+            Team-Size: Individual
+          </p>
+        </div>          
+        <div class="col offset-m1 m6">
+          <p>
+            A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for microphone comparisons (also known as "shootouts") which allows them to be informed of the equipment they wish to use or purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item black white-text carousel-description" href="#two!" id="carousel-description-one">
+      <div class="row">
+        <div class="col offset-m2 m2">
+          <p>
+            <h5>.paws(<img class="responsive-img" id="paws-logo-white-big" src="assets/images/paws-logo-white.png"/>)</h5>
+            Duration: 1 Week<br>
+            Team-Size: 3 Developers
+          </p>
+        </div>          
+        <div class="col offset-m1 m6">
+          <p>
+            Looking for a furry friend? This website allows users to browse for a new animal to adopt or place an animal up for adoption - because every animal deserves a loving home! <br> 
+            This application was developed with MEAN-stack and Bootstrap for styling.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item black white-text carousel-description" href="#three!" id="carousel-description-two">
+      <div class="row">
+        <div class="col offset-m2 m2">
+          <p>
+            <h5>Trekkster</h5>
+            Duration: 1 Week<br>
+            Team-Size: 3 Developers
+          </p>
+        </div>          
+        <div class="col offset-m1 m6">
+          <p>
+            A travel-blog application developed using Ruby on Rails. Trekkster allows users to share memories from
+            select cities and give other travelers ideas/tips for fun adventures. Come start your next adventure today!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item black white-text carousel-description" href="#four!" id="carousel-description-three">
+      <div class="row">
+        <div class="col offset-m2 m2">
+          <p>
+            <h5>Stork</h5>
+            Duration: 1 Week<br>
+            Team-Size: 4 Developers
+          </p>
+        </div>          
+        <div class="col offset-m1 m6">
+          <p>
+            Stork is an online candy store. Built primarily with Ruby on Rails, this project incorporates Devise for user authorization and Stripe for payment processing. Satisfy your sweettooth with Stork!
+          </p>
+        </div>
+      </div>
+    </div>  
+
+    <div class="carousel-item  black white-text carousel-description" href="#four!" id="carousel-description-four">
+      <div class="row">
+        <div class="col offset-m2 m3">
+          <p>
+            <h5>Blackbeard's Revenge</h5>
+            Duration: 3 Days<br>
+            Team-Size: Individual
+          </p>
+        </div>          
+        <div class="col offset-m1 m5">
+          <p>
+            A single-page game based on Hasbro's Battleship. <br> This pirate-themed variation is built through HTML/CSS, JavaScript and jQuery - complete with music and SFX.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- About Me Section -->
 
   <div class="parallax-container" id="about-me">
     <div class="parallax valign-wrapper"><img id="parallax-img2" src="assets/images/sd.jpg">
       <div class="parallax-text valign" id="about-me-container">
-          <h3 class="center-align">About Me</h3>
-          <div class="row">
-            <p id="about-me-text" class="center-align">I am a full-stack web developer in San Francisco, California</p>
-            <div class="col m5 offset-m1 about-me-paragraph">
-              <p>
-                Originally working in the music industry of <b>San Diego, California</b>, both as a performer and an audio engineer, I transitioned into web development in hopes of exploring new challenges in a more technical field.
-              </p>
-              <p>
-                I bring with me the discipline, self-motivation, and creativity that I've gained through my experience of studying music, attention to detail gained through listening critically in the recording studio, and a desire to connect with others on a personal level through the integrity of my work.
-              </p>
-            </div>
-            <div class="col m5 offset-m1 about-me-paragraph">
-              <p>
-                As a web developer, I enjoy having the skills and knowledge to create new tools. I've always been drawn to 
-                understanding and hearing the needs of others - and building web applications is an exciting new way for me respond to those needs. 
-              </p>
-              <p>
-                I hope to embody a spirit of service and care as I continue to build, develop, and create.
-              </p>
-            </div>
+        <h3 class="center-align">About Me</h3>
+        <div class="row">
+          <p id="about-me-text" class="center-align">I am a full-stack web developer in San Francisco, California</p>
+          <div class="col m5 offset-m1 about-me-paragraph">
+            <p>
+              Originally working in the music industry of <b>San Diego, California</b>, both as a performer and an audio engineer, I transitioned into web development in hopes of exploring new challenges in a more technical field.
+            </p>
+            <p>
+              I bring with me the discipline, self-motivation, and creativity that I've gained through my experience of studying music, attention to detail gained through listening critically in the recording studio, and a desire to connect with others on a personal level through the integrity of my work.
+            </p>
           </div>
-
+          <div class="col m5 offset-m1 about-me-paragraph">
+            <p>
+              As a web developer, I enjoy having the skills and knowledge to create new tools. I've always been drawn to 
+              understanding and hearing the needs of others - and building web applications is an exciting new way for me respond to those needs. 
+            </p>
+            <p>
+              I hope to embody a spirit of service and care as I continue to build, develop, and create.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -304,7 +269,7 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Projects</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="https://young-harbor-53388.herokuapp.com/">Mic Drop</a></li>
+            <li><a class="grey-text text-lighten-3" href="http://micdropshootout.herokuapp.com/">Mic Drop</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">.paws(<img class="responsive-img" id="paws-logo-white" src="assets/images/paws-logo-white.png"/>)</a></li>
             <li><a class="grey-text text-lighten-3" href="https://trekkster.herokuapp.com/">Trekkster</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Stork</a></li>
