@@ -24,6 +24,7 @@ hr {
 
 #main-section {
   text-shadow: 0 0 20px black;
+  height: 100vh !important;
 }
 
 .main-section-icon-div {
@@ -63,9 +64,9 @@ hr {
 
 #carousel-item-one {
 	background: url('assets/images/paws-spread.jpg');
-	/*background-position: center;*/
 	background-size: cover;
 }
+
 #carousel-item-two {
 	font-family: 'Poppins', sans-serif;
 	background: url('assets/images/trekkster.jpg');
@@ -101,7 +102,6 @@ hr {
 
 .project-menu-img {
 	height: 100px !important;
-	/*margin: 0 auto;*/
 	max-height: 100%;
 	border-radius: 3px;
 	width: 100% !important;
@@ -160,7 +160,6 @@ hr {
 }
 
 .parallax-container {
-  height: 100vh !important;
   color: white;
 }
 
@@ -199,6 +198,11 @@ hr {
 
 #portofolio-slider-container {
 	color: white;
+}
+
+#about-me {
+	height: 800px;
+	z-index: 1;
 }
 
 #about-me-container {
@@ -278,4 +282,50 @@ hr {
 #resume-object {
 	width: 100%;
 	height: 100%;
+}
+
+#img-audioengineer {
+	height: 190px;
+	width: 90%;
+	margin: 20px auto 0 auto;
+	background: url(assets/images/audioengineer.JPG);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 10px solid black;
+}
+
+#img-pianist {
+	border: 10px solid black;
+	height: 160px;
+	margin-top: 20px;
+	width: 90%;
+	background: url(assets/images/pianist.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#img-programmer {
+	border: 10px solid black;
+	height: 180px;
+	margin-top: 20px;
+	width: 90%;
+	background: url(assets/images/ga-group.JPG);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#about-me-title {
+	margin-top: 30px;
+}
+
+#piano-audio {
+	width: 90%;
+}
+
+#engineer-audio {
+	width: 90%;
+	margin-left: 5%;
 }
