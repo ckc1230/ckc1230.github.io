@@ -24,7 +24,7 @@ $(document).ready(function() {
   $('#project-menu-item-0').click(function() {
     $('#project-carousel').carousel('set', 0);
     $('#project-description-carousel').carousel('set', 0);
-    $('#launch-project-btn').attr("href", "https://young-harbor-53388.herokuapp.com/")
+    $('#launch-project-btn').attr("href", "https://micdropshootout.herokuapp.com/")
     $('#launch-project-btn').css("border", "2px solid white")
   })
   $('#project-menu-item-1').click(function() {
