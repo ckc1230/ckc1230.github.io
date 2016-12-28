@@ -338,7 +338,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 audio::-webkit-media-controls-panel {
-  width: calc(100% + 30px); /* Adjust as needed */
+  width: calc(100% + 20px); /* Adjust as needed */
 }
 
 @media only screen and (min-width: 480px) {
@@ -346,6 +346,6 @@ audio::-webkit-media-controls-panel {
     height: 900px;
   }
   audio::-webkit-media-controls-panel {
-	  width: calc(100% + 50px); /* Adjust as needed */
+	  width: calc(100% + 60px); /* Adjust as needed */
 	}
 }
