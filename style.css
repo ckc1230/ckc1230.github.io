@@ -165,12 +165,15 @@ hr {
 
 #technologies {
 	width: 100%;
-	background: url('assets/images/faders.jpg');
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('assets/images/faders.jpg') no-repeat;
 	background-position: center;
 	background-size: 100%;
 	padding: 15px 0 30px 0;
   color: white;
-  text-shadow: 0 0 20px black, 0 0 5px #0000FF;
+  text-shadow: 0 0 20px black;
   z-index: -1;
 }
 
