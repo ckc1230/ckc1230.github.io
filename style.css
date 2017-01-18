@@ -75,7 +75,7 @@ hr {
 }
 
 #carousel-item-three {
-	background: url('assets/images/stork-spread.jpg');
+	background: url('assets/images/terra-spread.png');
 	background-size: cover;
 }
 
@@ -130,7 +130,7 @@ hr {
 }
 
 #project-menu-item-3 {
-	background: url(assets/images/project-thumbnails/stork.png);
+	background: url(assets/images/project-thumbnails/terra-thumbnail.png);
 }
 
 #project-menu-item-4 {
@@ -143,6 +143,11 @@ hr {
 
 #project-menu-item-2-title {
 	font-family: 'Fjalla One', sans-serif;
+}
+
+#project-menu-item-3-title {
+	font-size: 35px;
+	font-family: 'Acme', sans-serif;
 }
 
 #project-menu-item-4-title {

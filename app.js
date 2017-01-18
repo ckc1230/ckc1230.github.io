@@ -42,7 +42,7 @@ $(document).ready(function() {
   $('#project-menu-item-3').click(function() {
     $('#project-carousel').carousel('set', 3);
     $('#project-description-carousel').carousel('set', 3);
-    $('#launch-project-btn').attr("href", "http://www.storkstore.us/")
+    $('#launch-project-btn').attr("href", "https://shopterra.herokuapp.com/")
     $('#launch-project-btn').css("border", "2px solid lightblue")
   })
   $('#project-menu-item-4').click(function() {
