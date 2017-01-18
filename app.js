@@ -30,8 +30,8 @@ $(document).ready(function() {
   $('#project-menu-item-1').click(function() {
     $('#project-carousel').carousel('set', 1);
     $('#project-description-carousel').carousel('set', 1);
-    $('#launch-project-btn').attr("href", "https://pawsadopt.herokuapp.com/")
-    $('#launch-project-btn').css("border", "2px solid green")
+    $('#launch-project-btn').attr("href", "http://cardagram.herokuapp.com/")
+    $('#launch-project-btn').css("border", "2px solid #FFB6F8")
   })
   $('#project-menu-item-2').click(function() {
     $('#project-carousel').carousel('set', 2);

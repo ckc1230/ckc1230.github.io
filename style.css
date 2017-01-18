@@ -63,7 +63,7 @@ hr {
 }
 
 #carousel-item-one {
-	background: url('assets/images/paws-spread.jpg');
+	background: url('assets/images/cardagram-spread.png');
 	background-size: cover;
 }
 
@@ -122,7 +122,7 @@ hr {
 }
 
 #project-menu-item-1 {
-	background: url(assets/images/project-thumbnails/paws.png);
+	background: url(assets/images/project-thumbnails/cardagram.png);
 }
 
 #project-menu-item-2 {
@@ -140,6 +140,11 @@ hr {
 #project-menu-item-0-title {
 	font-family: 'Bungee Inline', cursive;
 }
+
+#project-menu-item-1-title {
+	font-family: 'Carter One', cursive;
+}
+
 
 #project-menu-item-2-title {
 	font-family: 'Fjalla One', sans-serif;
