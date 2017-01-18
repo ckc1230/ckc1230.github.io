@@ -25,7 +25,7 @@ $(document).ready(function() {
     $('#project-carousel').carousel('set', 0);
     $('#project-description-carousel').carousel('set', 0);
     $('#launch-project-btn').attr("href", "https://micdropshootout.herokuapp.com/")
-    $('#launch-project-btn').css("border", "2px solid white")
+    $('#launch-project-btn').css("border", "2px solid #83CFF6")
   })
   $('#project-menu-item-1').click(function() {
     $('#project-carousel').carousel('set', 1);
@@ -43,13 +43,13 @@ $(document).ready(function() {
     $('#project-carousel').carousel('set', 3);
     $('#project-description-carousel').carousel('set', 3);
     $('#launch-project-btn').attr("href", "https://shopterra.herokuapp.com/")
-    $('#launch-project-btn').css("border", "2px solid lightblue")
+    $('#launch-project-btn').css("border", "2px solid #703034")
   })
   $('#project-menu-item-4').click(function() {
     $('#project-carousel').carousel('set', 4);
     $('#project-description-carousel').carousel('set', 4);
     $('#launch-project-btn').attr("href", "https://ckc1230.github.io/blackbeards-revenge/")
-    $('#launch-project-btn').css("border", "2px solid red")
+    $('#launch-project-btn').css("border", "2px solid #000201")
   })
   $(".project-menu-div").click(function() {
         $(".project-menu-div").removeClass('project-menu-div-active');
