@@ -119,22 +119,27 @@ hr {
 
 #project-menu-item-0 {
 	background: url(assets/images/project-thumbnails/micdrop.png);
+	background-size: cover;
 }
 
 #project-menu-item-1 {
 	background: url(assets/images/project-thumbnails/cardagram.png);
+	background-size: cover;
 }
 
 #project-menu-item-2 {
 	background: url(assets/images/project-thumbnails/trekkster.png);
+	background-size: cover;
 }
 
 #project-menu-item-3 {
 	background: url(assets/images/project-thumbnails/terra-thumbnail.png);
+	background-size: cover;
 }
 
 #project-menu-item-4 {
 	background: url(assets/images/project-thumbnails/blackbeard.png);
+	background-size: cover;
 }
 
 #project-menu-item-0-title {
