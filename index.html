@@ -2,31 +2,47 @@
 <html>
 <head>
   <title>Christopher Chan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="assets/images/favicon.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Bungee+Inline|Poppins|Acme|Carter+One" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 	<script src="app.js"></script>
 </head>
+
 <body>
 
   <!-- Main Section -->
 
   <div class="parallax-container" id="main-section">
-    <a href="#about-me" class="btn right nav-btn">About Me</a>
-    <a href="#projects" class="btn right nav-btn">Projects</a>    
-    <a href="#technologies" class="btn right nav-btn">Technologies</a>
+
+
+    <nav>
+      <div class="nav-wrapper valign-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down valign">
+          <li><a href="#about-me" class="btn right nav-btn">About Me</a></li>
+          <li><a href="#projects" class="btn right nav-btn">Projects</a></li>
+          <li><a href="#technologies" class="btn right nav-btn">Technologies</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#about-me" class="btn right nav-btn">About Me</a></li>
+          <li><a href="#projects" class="btn right nav-btn">Projects</a></li>
+          <li><a href="#technologies" class="btn right nav-btn">Technologies</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="parallax valign-wrapper"><img id="parallax-img1" src="assets/images/main-screen.jpg">
-      <div class="parallax-text valign center-align">
+      <div class="parallax-text valign center-align main-section-text">
         <h1>Christopher Chan</h1>
         <h3>Web Developer</h3>
       </div>
@@ -66,8 +82,12 @@
         <td>NodeJS</td> 
         <td>Express</td>          
         <td>AngularJS</td>          
-        <td>Bootstrap</td>          
         <td>Rails</td>          
+      </tr>
+      <tr>
+        <th>CSS Libraries:</th>
+        <td>Bootstrap</td> 
+        <td>Materialize</td>                   
       </tr>        
       <tr>
         <th>Database Tools:</th>
@@ -96,28 +116,28 @@
     <h1 class="black white-text center" id="project-header">Projects</h1>
 
     <div class="row white-text black" id="project-menu">
-      <div class="col m2 project-menu-div offset-m1 project-menu-div-active valign-wrapper" id="project-menu-item-0">
+      <div class="project-menu-div project-menu-div-active valign-wrapper" id="project-menu-item-0">
         <div class="project-menu-div-bg valign-wrapper" visibility="hidden">
           <h5 class="valign project-thumbnail-title" id="project-menu-item-0-title">Mic Drop</h5>
         </div>
       </div>    
-      <div class="col m2 project-menu-div valign-wrapper" id="project-menu-item-1">
+      <div class="project-menu-div valign-wrapper" id="project-menu-item-1">
         <div class="project-menu-div-bg valign-wrapper">
           <h5 class="valign project-thumbnail-title" id="project-menu-item-1-title">Cardagram</h5>
           <!-- <h5 class="valign project-thumbnail-title">.paws(<img class="responsive-img" id="paws-logo-white-big" src="assets/images/paws-logo-white.png"/>)</h5> -->
         </div>
       </div>
-      <div class="col m2 project-menu-div valign-wrapper" id="project-menu-item-2">
+      <div class="project-menu-div valign-wrapper" id="project-menu-item-2">
         <div class="project-menu-div-bg valign-wrapper">
           <h5 class="valign project-thumbnail-title" id="project-menu-item-2-title">Trekkster</h5>
         </div>
       </div>
-      <div class="col m2 project-menu-div valign-wrapper" id="project-menu-item-3">
+      <div class="project-menu-div valign-wrapper" id="project-menu-item-3">
         <div class="project-menu-div-bg valign-wrapper">
           <h5 class="valign project-thumbnail-title" id="project-menu-item-3-title">Terra</h5>
         </div>
       </div>
-      <div class="col m2 project-menu-div valign-wrapper" id="project-menu-item-4">
+      <div class="project-menu-div valign-wrapper" id="project-menu-item-4">
         <div class="project-menu-div-bg valign-wrapper">
           <h5 class="valign project-thumbnail-title center-align" id="project-menu-item-4-title">Blackbeard's Revenge</h5>
         </div>
@@ -148,14 +168,14 @@
   <div class="carousel carousel-slider" id="project-description-carousel">
     <div class="carousel-item black white-text carousel-description" href="#one!" id="carousel-description-zero">
       <div class="row">
-        <div class="col offset-m2 m2">
+        <div class="col offset-m2 m2 project-details">
           <p>
             <h5>Mic Drop</h5>
             Duration: 2 Weeks<br>
             Team-Size: Individual
           </p>
         </div>          
-        <div class="col offset-m1 m6">
+        <div class="col offset-m1 m6 project-description">
           <p>
             A web application dedicated to comparing the audio quality of microphones through listening examples. Users can upload/browse for microphone comparisons (also known as "shootouts") which allows them to be informed of the equipment they wish to use or purchase. This was a solo project I built using Ruby on Rails, JavaScript and jQuery.
           </p>
@@ -165,14 +185,14 @@
 
     <div class="carousel-item black white-text carousel-description" href="#two!" id="carousel-description-one">
       <div class="row">
-        <div class="col offset-m2 m2">
+        <div class="col offset-m2 m2 project-details">
           <p>
             <h5>Cardagram</h5>
             Duration: 2 Week<br>
             Team-Size: 2 Developers
           </p>
         </div>          
-        <div class="col offset-m1 m6">
+        <div class="col offset-m1 m6 project-description">
           <p>
             MEAN stack web application for users to create eCards. Built full-stack app with another developer, pair-programming for most of the project. Individual contribution included front-end design, UX flow, UI logic and validations using JavaScript, and image editing for eCard content. Built with only HTML, CSS and JavaScript.
           </p>
@@ -200,14 +220,14 @@
 
     <div class="carousel-item black white-text carousel-description" href="#three!" id="carousel-description-two">
       <div class="row">
-        <div class="col offset-m2 m2">
+        <div class="col offset-m2 m2 project-details">
           <p>
             <h5>Trekkster</h5>
             Duration: 1 Week<br>
             Team-Size: 3 Developers
           </p>
         </div>          
-        <div class="col offset-m1 m6">
+        <div class="col offset-m1 m6 project-description">
           <p>
             A travel-blog application developed using Ruby on Rails. Trekkster allows users to share memories from
             select cities and give other travelers ideas/tips for fun adventures. Come start your next adventure today!
@@ -218,14 +238,14 @@
 
     <div class="carousel-item black white-text carousel-description" href="#four!" id="carousel-description-three">
       <div class="row">
-        <div class="col offset-m2 m2">
+        <div class="col offset-m2 m2 project-details">
           <p>
             <h5>Terra</h5>
             Duration: 1 Week<br>
             Team-Size: 4 Developers
           </p>
         </div>          
-        <div class="col offset-m1 m6">
+        <div class="col offset-m1 m6 project-description">
           <p>
             Terra is an online store for ceramic pottery. Built primarily with Ruby on Rails, this project incorporates Devise for user authorization and Stripe for payment processing. Originally designed as a candy store, I revamped the front end to incorporate a cleaner and more professional look.
           </p>
@@ -235,14 +255,14 @@
 
     <div class="carousel-item  black white-text carousel-description" href="#four!" id="carousel-description-four">
       <div class="row">
-        <div class="col offset-m2 m3">
+        <div class="col offset-m2 m3 project-details">
           <p>
             <h5>Blackbeard's Revenge</h5>
             Duration: 3 Days<br>
             Team-Size: Individual
           </p>
         </div>          
-        <div class="col offset-m1 m5">
+        <div class="col offset-m1 m5 project-description">
           <p>
             A single-page game based on Hasbro's Battleship. <br> This pirate-themed variation is built through HTML/CSS, JavaScript and jQuery - complete with music and SFX.
           </p>
@@ -312,7 +332,7 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Christopher Chan - Web Developer</h5>
+          <h5 class="white-text footer-header">Christopher Chan - Web Developer</h5>
           <p class="grey-text text-lighten-4">
             Email: chriskchan1230@gmail.com<br>
             GitHub: ckc1230 / <a class="grey-text text-lighten-3" href="https://github.com/ckc1230">View</a><br>
@@ -320,7 +340,7 @@
             Resume: <a class="grey-text text-lighten-3" href="Resume_ChristopherChan.pdf" download>Download</a> / <a class="grey-text text-lighten-3" href="Resume_ChristopherChan.pdf">View</a>
           </p>
         </div>
-        <div class="col l4 offset-l2 s12">
+        <div class="col l4 offset-l2 s12 footer-projects">
           <h5 class="white-text">Projects</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href="http://micdropshootout.herokuapp.com/">Mic Drop</a></li>

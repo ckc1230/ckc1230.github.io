@@ -1,6 +1,7 @@
 $(document).ready(function() {
   console.log( "ready!" );
   $('.parallax').parallax();
+  $(".button-collapse").sideNav();
   $('#resume-btn').click(function() {
     $('#resume-modal').modal('open');
   })
