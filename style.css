@@ -1,5 +1,6 @@
 nav {
-	background: rgba(0, 0, 0, 0.2) !important;
+	background: transparent !important;
+	box-shadow: none !important;
 }
 
 hr {
@@ -11,7 +12,8 @@ hr {
 }
 
 .nav-wrapper {
-	background: rgba(0, 0, 0, 0.2) !important;
+	background: transparent !important;
+	float: right;
 	color: black;
 	position: fixed;
 }
@@ -19,6 +21,17 @@ hr {
 .nav-btn {
 	background: transparent !important;
 	box-shadow: none !important;
+	margin-top: 10px;
+}
+
+.side-nav {
+	background: black !important;
+	font-size: 40px;
+}
+
+.side-nav a {
+	width: 100% !important;
+	font-size: 20px !important;
 	margin-top: 10px;
 }
 
@@ -53,6 +66,7 @@ hr {
 #project-header {
 	margin: 0 0 0 0 !important;
 	padding: 20px 20px 0px 20px;
+	font-family: 'Bungee Inline', cursive;
 }
 
 #carousel-item-zero {
@@ -90,14 +104,19 @@ hr {
 
 #project-menu {
 	padding: 20px 20px 30px 20px;
-	margin: 0 auto;
+	margin-bottom: 0;
+	text-align: center;
 }
 
 .project-menu-div {
 	height: 100px !important;
 	max-height: 100%;
+	margin-top: 0 !important;
+	margin-left: 5px;
 	padding: 0 !important;
-	margin: 0 10px 0 10px;
+	width: 180px !important;
+	display: inline-block !important;
+	overflow: hidden;
 }
 
 .project-menu-img {
@@ -316,6 +335,7 @@ hr {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border: 10px solid black;
+	min-width: 300px;
 }
 
 #img-pianist {
@@ -326,7 +346,8 @@ hr {
 	background: url(assets/images/pianist.jpg);
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;	
+	min-width: 300px;
 }
 
 #img-programmer {
@@ -338,6 +359,7 @@ hr {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	min-width: 300px;
 }
 
 #about-me-title {
@@ -357,6 +379,10 @@ audio::-internal-media-controls-download-button {
 	display:none;
 }
 
+audio {
+	min-width: 300px;
+}
+
 audio::-webkit-media-controls-enclosure {
   overflow:hidden;
 }
@@ -365,4 +391,170 @@ audio::-webkit-media-controls-panel {
   width: calc(100% + 30px);
 }
 
+@media screen and (max-width: 480px) {
+	#engineer-audio {
+	margin-left: 0;
+}
+}
 
+
+@media screen and (max-width: 820px) {
+  #project-header {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+	#main-section {
+		height: 70vh !important;
+	}
+
+	.main-section-text {
+		text-align: center;
+	}
+
+	.main-section-text h1 {
+		font-size: 30px;
+	}
+
+	.main-section-text h3 {
+		font-size: 20px;
+	}
+
+	.main-section-icon {
+		height: 45px !important;
+		width: 45px !important;
+	}
+
+	.main-section-icon-div {
+		text-align: center;
+		margin: 0 25px;
+		bottom: 0%;
+	}
+
+	.side-nav {
+		background: black !important;
+		font-size: 40px;
+	}
+
+	.side-nav a {
+		width: 100% !important;
+		font-size: 20px !important;
+		margin-top: 10px;
+	}
+
+	#technologies {
+		padding-top: 0;
+		margin-top: 0;
+		background: white;
+		color: black;
+	}
+
+	#technologies h3 {
+		margin: 0 auto;
+		padding-top: 10px;
+	}
+
+	#technologies hr {
+		margin: 0 auto;
+	}
+
+	#about-me {
+		height: 1400px;
+		text-align: center;
+	}
+
+	#about-me .m5 {
+		width: 420px;
+	}
+
+	#about-me .about-me-paragraph div {
+		width: 100%;
+	}
+
+	#about-me audio {
+		width: 100%;
+		margin: 0;
+	}
+
+	#img-audioengineer {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+	body {
+		width: 330px;
+	}
+	#technologies {
+		display: none;
+	}
+	#main-section {
+		height: 93vh !important;
+	}
+	.main-section-icon-div {
+		bottom: 10%;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.main-section-icon-div a:nth-child(3),  .main-section-icon-div a:nth-child(4) {
+		display: none !important;
+	}
+	#project-header {
+		font-size: 30px;
+	}
+	.project-menu-div {
+		width: 250px !important;
+		margin: 2px auto !important;
+	}
+	.project-details {
+		display: none;
+	}
+	.project-description p {
+		font-size: 12px !important;
+	}
+	#about-me {
+		height: 1300px;
+	}
+	#about-me-container {
+		margin: 0 auto;
+		width: 95% !important;
+	}
+	#about-me p {
+		font-size: 13px;
+	}
+	#about-me-text {
+		font-size: 15px !important;
+	} 
+	#about-me .m5 {
+		width: 100% !important;
+		padding-left: 8px !important;
+	}
+	.about-me-paragraph {
+		width: 100% !important;
+	}
+	#project-carousel {
+		width: 100% !important;
+	}
+	.footer-projects, .footer-header {
+		display: none;
+	}
+	.page-footer {
+		padding: 0 !important;
+	}
+	.page-footer p {
+		margin-bottom: 0 !important;
+	}
+	.footer-copyright {
+		text-align: center;
+	}
+
+}
