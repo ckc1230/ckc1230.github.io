@@ -492,7 +492,7 @@ audio::-webkit-media-controls-panel {
   and (orientation: portrait) {
 
 	body {
-		width: 330px;
+		width: 100%;
 	}
 	#technologies {
 		display: none;
