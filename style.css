@@ -77,7 +77,7 @@ hr {
 }
 
 #carousel-item-one {
-	background: url('assets/images/cardagram-spread.png');
+	background: url('http://i.imgur.com/g2yIeYP.jpg');
 	background-size: cover;
 }
 
@@ -117,6 +117,7 @@ hr {
 	width: 180px !important;
 	display: inline-block !important;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .project-menu-img {
